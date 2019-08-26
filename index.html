@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>boolfix</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://kit.fontawesome.com/34c946dad8.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/it.js"></script> -->
+    <!-- <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <input type="text" name="" value="">
+    <button type="button" name="button">search</button>
+
+
+<script id="template" type="text/x-handlebars-template">
+
+  <li title={{title}} class="day" >{{title}}</li>
+
+</script>
+
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/34c946dad8.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <!-- <link rel="stylesheet" href="css/all.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Boolflix</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <header>
+        <input id="query" placeholder="Inserisci un titolo"/>
+        <button id="myButton">Cerca</button>
+      </header>
+      <!-- contenitore delle schede -->
+      <div id="results">
+      </div>
+    </div>
+
+
+    <!-- usiamo un template per creare le schede film -->
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="movie">
+        <ul>
+          <li><span class="bold">Tipo:</span> <span> {{type}}</span> </li>
+          <li><span class="bold">Titolo:</span> <span class="movie-title"> {{title}}</span> </li>
+          <li><span class="bold">Titolo originale:</span><span class="original_title"> {{originalTitle}}</span></li>
+          <li><span class="bold">Lingua:</span><span class="movie-lan"> {{{movieLan}}}</span></li>
+          <li><span class="bold">Voto:</span><span class="movie-rate"> {{{movieRate}}}</span></li>
+        </ul>
+      </div>
+    </script>
+
+    <script type="text/javascript" src="main.js"></script>
+
+  </body>
+</html>
