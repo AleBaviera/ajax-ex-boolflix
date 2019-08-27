@@ -130,7 +130,8 @@ function print(type, movies) {
       title: title,
       originalTitle: originalTitle,
       movieLan: getLangFlag(movie.original_language),
-      movieRate: getStarFromRate(movie.vote_average)
+      movieRate: getStarFromRate(movie.vote_average),
+      img: getPosterImg(movie.poster_path)
     };
 
     var html = template(context);
@@ -173,6 +174,19 @@ function getLangFlag(lang) {
   }
 
   return flag;
+}
+
+function getPosterImg(url){
+  var imgTag = "";
+
+  if (url) {
+
+    imgTag = "<img src='https://image.tmdb.org/t/p/w185" + url + "' class='poster'/>"
+  }
+
+  return imgTag;
+
+
 }
 
 function init() {
